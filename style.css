@@ -176,15 +176,13 @@ form button:hover {
     transform: scale(1.1);
 }
 
-
-@media (max-width: 400px) {
+@media (max-width: 475px) {
     .card {
         width: 30rem;
         height: 50rem;
     }
 
     .modal {
-
         width: 25rem;
         height: 30rem;
         padding: 2.4rem 3.2rem 3.2rem;
@@ -193,5 +191,5 @@ form button:hover {
     .modal-wrapper .title {
         margin-top: 2.5rem;
         font-size: 2.5rem;
-}
+    }
 }
