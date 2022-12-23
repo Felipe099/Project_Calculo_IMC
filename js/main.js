@@ -33,31 +33,26 @@ function displayResultMessage(result) {
     let message;
     
 
-    if(result > 18.5){
-        message = `O seu IMC é de: ${result}
+    if(result < 18.5){
+        message =`O seu IMC é de: ${result}
 
-        CLASSIFICAÇÃO: MAGREZA
-        `;
-    } else if(result >= 18.5 || result <= 24.9) {
-        message = `O seu IMC é de: ${result}
+        CLASSIFICAÇÃO: MAGREZA`;
+    } else if(result >= 18.5 && result <= 24.9) {
+        message =`O seu IMC é de: ${result}
 
-        CLASSIFICAÇÃO: NORMAL
-        `;
-    } else if(result >= 25 || result <= 29.9) {
-        message = `O seu IMC é de: ${result}
+        CLASSIFICAÇÃO: NORMAL`;
+    } else if(result >= 25 && result <= 29.9) {
+        message =`O seu IMC é de: ${result}
 
-        CLASSIFICAÇÃO: SOBREPESO
-        `;
-    } else if(result >= 30 || result <= 39.9) {
-        message = `O seu IMC é de: ${result}
+        CLASSIFICAÇÃO: SOBREPESO`;
+    } else if(result >= 30 && result <= 39.9) {
+        message =`O seu IMC é de: ${result}
 
-        CLASSIFICAÇÃO: OBESIDADE
-        `;
+        CLASSIFICAÇÃO: OBESIDADE`;
     } else{
-        message = `O seu IMC é de: ${result}
+        message =`O seu IMC é de: ${result}
 
-        CLASSIFICAÇÃO: OBESIDADE
-        `;
+        CLASSIFICAÇÃO: OBESIDADE`;
     } 
 
     Modal.modalMessage.innerText = message;
